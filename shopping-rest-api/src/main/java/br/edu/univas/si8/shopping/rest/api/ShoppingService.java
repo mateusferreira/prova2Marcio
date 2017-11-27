@@ -7,17 +7,17 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/inventory")
+@Path("/order")
 public interface ShoppingService {
 	
 	@GET
-	@Path("/product/names")
+	@Path("/all")
 	@Produces(MediaType.APPLICATION_JSON)
 	String[] listProductNames();
 	
 	@POST
-	@Path("/product/{name}")
+	@Path("/add")
 	@Produces(MediaType.APPLICATION_JSON)
-	String saveNewProduct(@PathParam("name") String name);
+	String saveNewProduct(@PathParam("description") String name);
 
 }

@@ -9,7 +9,7 @@ import edu.univas.si8.shopping.ejb.interfaces.Shopping;
 
 @RequestScoped
 public class ShoppingServiceImpl implements ShoppingService {
-	//@EJB(mappedName = "java:app/hello-rest-ejb-0.1-SNAPSHOT/InventoryBean!br.edu.univas.si8.ta.hello.ejb.interfaces.InventoryRemote")
+	@EJB(mappedName = "java:app/shopping-rest-ejb-0.1-SNAPSHOT/ShoppingBean!edu.univas.si8.shopping.ejb.interfaces.ShoppingRemote")
 	private Shopping shopping;
 
 	@Override

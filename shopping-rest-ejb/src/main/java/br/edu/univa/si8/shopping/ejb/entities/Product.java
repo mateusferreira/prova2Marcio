@@ -1,7 +1,9 @@
 package br.edu.univa.si8.shopping.ejb.entities;
 
 
-import java.sql.Timestamp;
+
+
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -21,7 +23,7 @@ public class Product {
 	private Integer id;
 
 	private String description;
-	private Timestamp tempo;
+	private Date tempo;
 
 	public Integer getId() {
 		return id;
@@ -39,11 +41,11 @@ public class Product {
 		this.description = name;
 	}
 
-	public Timestamp getQuantity() {
+	public Date getTempo() {
 		return tempo;
 	}
 
-	public void setTempo(Timestamp tempo) {
+	public void setTempo(Date tempo) {
 		this.tempo = tempo;
 	}
 
