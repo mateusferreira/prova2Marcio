@@ -23,7 +23,7 @@ public class Product {
 	private Integer id;
 
 	private String description;
-	private Date tempo;
+	private Date order_time;
 
 	public Integer getId() {
 		return id;
@@ -42,11 +42,11 @@ public class Product {
 	}
 
 	public Date getTempo() {
-		return tempo;
+		return order_time;
 	}
 
 	public void setTempo(Date tempo) {
-		this.tempo = tempo;
+		this.order_time = tempo;
 	}
 
 }
